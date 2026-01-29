@@ -1,19 +1,85 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+############################
+# OS / Editor files
+############################
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-# Intellij 
-*.iml
+############################
+# Logs
+############################
+*.log
+logs/
+*.out
+
+############################
+# Environment & Secrets
+############################
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+*.tfvars
+
+############################
+# Python
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+
+############################
+# Docker
+############################
+*.tar
+docker-compose.override.yml
+
+############################
+# Ansible
+############################
+*.retry
+inventory.ini
+host_vars/
+group_vars/
+roles/*/files/*
+roles/*/templates/*
+
+############################
+# Terraform
+############################
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+
+############################
+# Jenkins
+############################
+jenkins_home/
+*.hpi
+*.jpi
+
+############################
+# Node.js (if used)
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+############################
+# Archives
+############################
+*.zip
+*.tar.gz
+*.rar
